@@ -6,3 +6,26 @@
   font-family: "Space Grotesk";
   src: url("./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
 }
+
+@layer components {
+  .right {
+    @apply bg-white max-lg:row-start-2 max-lg:row-end-4
+           lg:col-start-2 lg:col-end-4 lg:flex lg:items-center;
+  }
+
+  .btn {
+    @apply border border-slate-500 rounded-md py-2 px-5 w-full
+           text-white text-[18px] font-bold
+           bg-very-dark-violet hover:bg-dark-grayish-violet;
+  }
+
+  .card {
+    @apply absolute max-w-[378px] max-lg:px-4
+           max-lg:right-0 max-lg:left-0 max-lg:mx-auto
+           lg:relative lg:top-[20%];
+  }
+
+  .card-bg {
+    @apply flex text-white w-64 aspect-video bg-cover rounded-lg lg:w-full;
+  }
+}

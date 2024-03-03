@@ -1,7 +1,10 @@
+import Hero from "./sections/Hero";
+
 export default function App() {
+
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <main className="max-w-screen-2xl mx-auto">
+      <Hero />
+    </main>
   );
 }
